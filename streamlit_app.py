@@ -13,7 +13,7 @@ st.set_page_config(page_title="Text Classification Tester", layout="wide")
 st.title("Interface de test pour l'API de classification de texte")
 st.write("Utilisez cette interface pour envoyer des requêtes à votre API FastAPI en local.")
 
-endpoint = st.selectbox(
+endpoint = st.sidebar.selectbox(
     "Sélectionnez l'endpoint à appeler", 
     ("/predict", "/predict/format")
 )
